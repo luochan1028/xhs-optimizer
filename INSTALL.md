@@ -10,13 +10,19 @@
 pip install pyyaml
 ```
 
-下载：在 CodeArts 代码仓 xhs-optimizer 里下载 zip（或克隆），进到 `xhs-optimizer` 目录。
+下载：GitHub 公开仓（免登录，直接克隆或下载 zip），进到 `xhs-optimizer` 目录。
+
+克隆地址：https://github.com/luochan1028/xhs-optimizer.git
+
+仓库地址：https://github.com/luochan1028/xhs-optimizer
+
+也可以在 CodeArts 代码仓下载（同样公开、免登录）：
 
 仓库地址：https://devcloud.cn-north-4.huaweicloud.com/codehub/project/fddc24e275b142b29a0530f528fdc423/codehub/3120806/home?ref=master
 
 克隆地址：https://codehub.devcloud.cn-north-4.huaweicloud.com/fddc24e275b142b29a0530f528fdc423/xhs-optimizer.git
 
-> 注意：仓库已公开，所有访客只读，不用登录就能查看和下载。
+> 注意：两个仓库都已公开，所有访客只读，不用登录就能查看和下载。
 
 笔记文件：新建一个 `.txt`，第一行是标题，空一行，后面是正文，标签直接写在正文里（例如 `#求职`）。
 
