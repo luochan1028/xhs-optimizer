@@ -176,7 +176,7 @@ function run(){
   h += '<h2>标题改写建议</h2><ul>' + r.rewrites.map(function (w){
     return '<li><b>' + esc(w.name) + '：</b>' + esc(w.title) + (w.missing.length ? '（缺：' + esc(w.missing.join('、')) + '，补上对应关键词）' : '') + '<br><span class="note">' + esc(w.tip) + ' 例：' + esc(w.example) + '</span></li>';
   }).join('') + '</ul>';
-  h += '<h2>发布时间建议</h2><ul>' + r.times.general.map(function (t){return '<li>'+esc(t)+'</li>';}).join('') + '<li>' + esc(r.times.weekend) + '</li><li>' + esc(r.times.tip) + '</li></ul>';
+  h += '<h2>发布时间建议</h2><ul>' + r.times.general.map(function (t){return '<li>' + esc(t.time) + '：' + esc(t.note) + '</li>';}).join('') + r.times.weekend.map(function (t){return '<li>' + esc(t.time) + '：' + esc(t.note) + '</li>';}).join('') + '<li>' + esc(r.times.tip) + '</li></ul>';
   h += '<p class="note">风险词库是示例版，命中请人工复核。本地版（可改规则、批量跑、生成 HTML 诊断卡片）见 CodeArts 代码仓 xhs-optimizer。</p>';
   document.getElementById('out').innerHTML = h;
 }
